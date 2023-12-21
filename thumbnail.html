@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Thumbnails</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .thumbnail-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .thumbnail {
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+      margin: 10px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.1);
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .thumbnail:hover img {
+      opacity: 0.7;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <div class="thumbnail-container">
+      <div class="thumbnail" onclick="openModal('event1.jpg')">
+        <img src="event1.jpg" alt="Event 1">
+      </div>
+      <div class="thumbnail" onclick="openModal('event2.jpg')">
+        <img src="event2.jpg" alt="Event 2">
+      </div>
+      <!-- Add more thumbnails as needed -->
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Event Image">
+    </div>
+  </section>
+
+  <script>
+    function openModal(imageSrc) {
+      var modal = document.getElementById("myModal");
+      var modalImage = document.getElementById("modalImage");
+
+      modal.style.display = "flex";
+      modalImage.src = imageSrc;
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

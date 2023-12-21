@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Detail</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-detail {
+      margin-bottom: 20px;
+    }
+
+    .event-detail img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .video-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+      section {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Event Detail</h1>
+  </header>
+
+  <section>
+    <div class="event-detail">
+      <img src="event1.jpg" alt="Event 1">
+      <h2>Event 1 Title</h2>
+      <p>Location: Event 1 Location</p>
+      <p>Date: Event 1 Date</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+    </div>
+
+    <div class="video-container">
+      <!-- Replace the video URL with the actual video URL -->
+      <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Add more details as needed -->
+
+  </section>
+
+  <script>
+    // Add any JavaScript logic if needed
+  </script>
+
+</body>
+</html>

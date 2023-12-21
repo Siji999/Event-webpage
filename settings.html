@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customizable Presentation</title>
+        <script src="customization.js"></script>
+        <link rel="stylesheet" href="settings.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header id="websiteHeader">
+            <div class="nav-container">
+                <div class="menu-wrapper">
+                    <div class="nav-one">
+                        <a href="/" class="nav-link">
+                            SJX
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <span onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars nav-link" id="barsIcon"></i>
+                            <i class="fa fa-times nav-link" id="timesIcon" style="display: none;"></i>
+                        </span>
+                    </div>
+                    <div class="nav-two">
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                        <a href="events.html" class="nav-link">
+                            Event
+                        </a>
+                        <a href="event-details.html" class="nav-link">
+                            Event Details
+                        </a>
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="/" class="nav-link">Home</a>
+                        <a href="/events" class="nav-link">Event</a>
+                        <a href="/event-detail" class="nav-link">Event Details</a>
+                        <a href="/contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="websiteBody">
+            <p>This is the content of your website. Customize the presentation below:</p>
+
+            <div class="settings">
+                <label for="fontSize">Font Size:</label>
+                <input type="range" id="fontSize" min="0.5" max="2" step="0.1" value="1" oninput="changeFontSize()">
+            </div>
+
+            <div class="settings">
+                <label for="bgColor">Background Color:</label>
+                <input type="color" id="bgColor" value="#EAE3C9" onchange="changeBackgroundColor()">
+            </div>
+
+            <div class="settings">
+                <label for="textColor">Text Color:</label>
+                <input type="color" id="textColor" value="#222222" onchange="changeTextColor()">
+            </div>
+
+            <button onclick="resetPreferences()">Reset Preferences</button>
+        </section>
+    </body>
+</html>

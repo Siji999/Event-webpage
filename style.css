@@ -1,0 +1,253 @@
+/* Index page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+/* Link to the Google Fonts API to import the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Style the heading and paragraph elements inside the article */
+article h2 {
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: 700; /* Use the bold version of Roboto for the heading */
+    margin-bottom: 10px; /* Add spacing below the heading */
+}
+
+article p {
+    font-size: 25px; /* Adjust the font size as needed */
+    line-height: 1.9; /* Set a comfortable line height for readability */
+    margin-bottom: 20px; /* Add spacing below the paragraphs */
+}
+
+header, footer {
+    background-color: #d4ceaed8;
+    color: #222222;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-one a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 1.5em;
+}
+
+.icon {
+    /* color: #fff; */
+    color: #222222;
+    font-size: 2.5rem;
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #222222;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding: 0 16px;
+}
+
+.nav-two a {
+    font-size: 1em;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.mobile-menu a {
+    display: block;
+    color: #222222;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Settings page */
+.settings {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+    /* text-align: right; */
+}
+
+button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 16px 24px;
+}
+
+/*  */
+main {
+    background-image: url(tech1.jpg);
+    background-size: cover;
+    height: 700px;
+    padding: 20px;
+    color: #040409;
+    opacity: 0.9;
+}
+.foot-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.first-foot, .second-foot, .third-foot{
+    color: rgba(2, 2, 2, 0.842);
+    /* font-family: Inter; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 140%; */
+    /* letter-spacing: -0.4px; */
+    text-align: left;
+    margin: 49px 0 54px 0;
+}
+.Unsubscribe, .details {
+    color: rgba(34, 34, 34, 0.60);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin-bottom: 16px; */
+}
+.Subscribe {
+    margin: 18px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .submit {
+    margin-left: 32px;
+} */
+.search {
+    border-radius: 16px;
+    background: #E4E4E4;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.search input[type="text"] {
+    /* outline: none; */
+    border-radius: 12px;
+    padding: 12px 6px;
+    background: inherit;
+    width: 50%;
+    /* border: 0; */
+    border-color: transparent;
+    transition: border-color 0.3s;
+
+}
+.search input::placeholder {
+    font-size: 18px;
+    /* margin-top: 10px; */
+    /* padding-top: 5px; */
+}
+.search input[type="text"]:focus {
+    /* border: 0; */
+    /* border-color: transparent; */
+    border: 0 transparent #E4E4E4;
+}
+#envelope {
+    margin-right: 24px;
+    font-size: 25px;
+}
+.social-media {
+    margin-bottom: 16px;
+}
+.social-media-handle {
+    color: rgba(34, 34, 34, 0.60);
+
+    /* Body/B1/Medium */
+    /* font-family: Galano Grotesque; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.icons {
+    margin-right: 16px;
+    width: 30px;
+    height: 30px;
+}
+.divider {
+    width: 100%;
+    height: 2px;
+    background: rgba(34, 34, 34, 0.60);
+}
+.copyright {
+    width: 373px;
+    height: 18px;
+    /* flex-shrink: 0; */
+    color: #222222;
+    text-align: left;
+
+    /* Body/B2/Regular */
+    /* font-family: Galano Grotesque; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-two {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    /* Settings page */
+    /* section {
+        padding: 10px;
+    } */
+    .foot-wrapper {
+        flex-direction: column;
+    }
+}

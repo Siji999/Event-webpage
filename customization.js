@@ -63,13 +63,14 @@ function changeFontSize() {
   document.getElementById("websiteHeader").style.fontSize =
     fontSizeValue + "em";
   document.getElementById("websiteBody").style.fontSize = fontSizeValue + "em";
-  // document.getElementById("websiteFooter").style.fontSize = fontSizeValue + "em";
+  document.getElementById("websiteFooter").style.fontSize =
+    fontSizeValue + "em";
 
   // Update the font size for the footer
-  var footerElements = document.querySelectorAll("#websiteFooter *");
-  footerElements.forEach(function (element) {
-    element.style.fontSize = fontSizeValue + "em";
-  });
+  //   var footerElements = document.querySelectorAll("#websiteFooter *");
+  //   footerElements.forEach(function (element) {
+  //     element.style.fontSize = fontSizeValue + "em";
+  //   });
 
   // Save preferences to Local Storage
   localStorage.setItem("fontSize", fontSizeValue);

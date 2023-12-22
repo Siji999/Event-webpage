@@ -185,3 +185,22 @@ function validateForm() {
   // Form is valid, you can proceed with further actions (e.g., submitting to server).
   alert("Form submitted successfully!");
 }
+
+// Open and close modal
+function openModal() {
+  var modalContent = document.getElementById("modalContent");
+  var defaultContent = document.getElementById("defaultContent");
+
+  if (modalContent.classList.contains("hidden")) {
+    modalContent.classList.remove("hidden");
+    defaultContent.classList.add("hidden");
+  } else {
+    modalContent.classList.add("hidden");
+    defaultContent.classList.remove("hidden");
+  }
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}

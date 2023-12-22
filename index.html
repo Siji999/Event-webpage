@@ -1,162 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SJX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="customization.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
     <header id="websiteHeader">
-        <div id="textColor">
-            <div class="nav-container" id="bgColor">
-                <div class="menu-wrapper" id="fontSize">
-                    <div class="nav-one">
-                        <a href="/" class="nav-link">
-                            SJX
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <span onclick="toggleMobileMenu()">
-                            <i class="fa fa-bars nav-link" id="barsIcon"></i>
-                            <i class="fa fa-times nav-link" id="timesIcon" style="display: none;"></i>
-                        </span>
-                    </div>
-                    <div class="nav-two">
-                        <a href="index.html" class="nav-link">
-                            Home
-                        </a>
-                        <a href="events.html" class="nav-link">
-                            Event
-                        </a>
-                        <a href="event-details.html" class="nav-link">
-                            Event Details
-                        </a>
-                        <a href="contact.html" class="nav-link">
-                            Contact
-                        </a>
-                    </div>
-                </div>
-            
-                <div class="mobile-menu" id="mobileMenu">
-                    <a href="/" class="nav-link">Home</a>
-                        <a href="/events" class="nav-link">Event</a>
-                        <a href="/event-detail" class="nav-link">Event Details</a>
-                        <a href="/contact" class="nav-link">Contact</a>
-                </div>
+      <div id="textColor">
+        <div class="nav-container" id="bgColor">
+          <div class="menu-wrapper" id="fontSize">
+            <div class="nav-one">
+              <a href="/" class="nav-link"> SJX </a>
             </div>
+            <div class="icon">
+              <span onclick="toggleMobileMenu()">
+                <i class="fa fa-bars nav-link" id="barsIcon"></i>
+                <i
+                  class="fa fa-times nav-link"
+                  id="timesIcon"
+                  style="display: none"
+                ></i>
+              </span>
+            </div>
+            <div class="nav-two">
+              <a href="index.html" class="nav-link path-name"> Home </a>
+              <a href="events.html" class="nav-link path-name"> Event </a>
+              <a href="contact.html" class="nav-link path-name"> Contact Us </a>
+              <a href="settings.html" class="nav-link path-name">
+                <i class="fa fa-gear"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-menu" id="mobileMenu">
+            <!-- Mobile menu items will be dynamically added here via JavaScript -->
+          </div>
         </div>
+      </div>
     </header>
 
+    <!-- Body -->
     <main>
-        <section id="websiteBody">
-            <h2>Welcome to Our Events</h2>
-    
-           
-            <!-- Add more events as needed -->
-    
-            <article>
-                <h2>About Us</h2>
-                <p>We at SJX believe that innovation and ongoing education are powerful forces. Enter a universe where knowledge has no boundaries and creativity and technology coexist. SJX is the place to go if you're a tech enthusiast, aspiring entrepreneur, or just interested in learning about the newest developments in a variety of industries.
+      <section id="websiteBody">
+        <h2>Welcome to Our Events</h2>
 
-                    Discover a carefully chosen selection of programmes, workshops, and interactive sessions created to spark your interest, broaden your horizons, and help you connect with like-minded people. SJX is your go-to venue for engaging events, offering anything from thought-provoking keynote talks by leading industry figures to practical seminars that hone your abilities.
-                    
-                    
-                    
-                    Come be a part of our dynamic community where creativity is unrestricted, partnerships flourish, and ideas blossom. Visit SJX to be inspired, educated, and to start a path of limitless opportunities.
-                    
-                    
-                    Come, dive into the future with us. Welcome to SJX Where Innovation Meets Opportunity!</p>
-            </article>
-    
-            <article>
-                <h2>Contact Us</h2>
-                <p>For more information, please contact us at <a href="mailto:info@example.com">info@example.com</a>.</p>
-            </article>
+        <!-- Add more events as needed -->
+        <div class="intro-img"></div>
 
-        </section>
+        <article>
+          <h2>About Us</h2>
+          <p>
+            We at SJX believe that innovation and ongoing education are powerful
+            forces. Enter a universe where knowledge has no boundaries and
+            creativity and technology coexist. SJX is the place to go if you're
+            a tech enthusiast, aspiring entrepreneur, or just interested in
+            learning about the newest developments in a variety of industries.
+            Discover a carefully chosen selection of programmes, workshops, and
+            interactive sessions created to spark your interest, broaden your
+            horizons, and help you connect with like-minded people. SJX is your
+            go-to venue for engaging events, offering anything from
+            thought-provoking keynote talks by leading industry figures to
+            practical seminars that hone your abilities. Come be a part of our
+            dynamic community where creativity is unrestricted, partnerships
+            flourish, and ideas blossom. Visit SJX to be inspired, educated, and
+            to start a path of limitless opportunities. Come, dive into the
+            future with us. Welcome to SJX Where Innovation Meets Opportunity!
+          </p>
+        </article>
+
+        <!-- <article>
+          <h2>Contact Us</h2>
+          <p>
+            For more information, please contact us at
+            <a href="mailto:info@example.com">info@example.com</a>.
+          </p>
+        </article> -->
+      </section>
     </main>
+
+    <!-- Footer -->
     <footer id="websiteFooter">
-        <div id="bgColor">
-            <div class="foot-wrapper">
-                <div class="first-foot">
-                    <p>CONNECT WITH US</p>
-                    <div class="social-media">
-                        <span class="icons">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="social-media-handle">
-                            SJX
-                        </span>
-                    </div>
-                    <div class="social-media">
-                        <span class="icons">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </span>
-                        <span class="social-media-handle">
-                            SJX
-                        </span>
-                    </div>
-                    <div class="social-media">
-                        <span class="icons">
-                            <!-- <img src="./assets/images/X svg.svg" alt="x" class="x"> -->
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </span>
-                        <span class="social-media-handle">
-                            @sjx
-                        </span>
-                    </div>
-                </div>
-                <div class="second-foot">
-                    <p>CONTACT</p>
-                    <div class="social-media">
-                        <span class="icons">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        </span>
-                        <span class="social-media-handle">
-                            +44 7392 650742
-                        </span>
-                    </div>
-                    <div class="social-media">
-                        <span class="icons">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </span>
-                        <span class="social-media-handle">
-                            +44 7392 650742
-                        </span>
-                    </div>
-                </div>
-                <div class="third-foot">
-                    <p>Subscribe to get offers</p>
-                    <p class="Unsubscribe">Unsubscribe or change preference</p>
-                    <div class="Subscribe">
-                        <span class="search">
-                            <i class="fa fa-envelope-o" id="envelope" aria-hidden="true"></i>
-                            <input type="text" placeholder="Email Address" name="search">
-                        </span>
-                        <button type="submit" class="submit">
-                            Subscribe
-                            <!-- <i class="fa fa-search"></i> -->
-                        </button>
-                    </div>
-                    <p class="details">For details of how we use your information, please see our </p>
-                    <a href="#" class="details">privacy policy</a>
-                </div>
+      <div id="bgColor">
+        <div class="foot-wrapper">
+          <div class="first-foot">
+            <p>CONNECT WITH US</p>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> SJX </span>
             </div>
-            <div class="divider"></div>
-            <div class="copyright">
-                2023 © All rights reserved by SJX
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> SJX </span>
             </div>
+            <div class="social-media">
+              <span class="icons">
+                <!-- <img src="./assets/images/X svg.svg" alt="x" class="x"> -->
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> @sjx </span>
+            </div>
+          </div>
+          <div class="second-foot">
+            <p>CONTACT</p>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> +44 7392 650742 </span>
+            </div>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> +44 7392 650742 </span>
+            </div>
+          </div>
+          <div class="third-foot">
+            <p>Subscribe to get offers</p>
+            <p class="Unsubscribe">Unsubscribe or change preference</p>
+            <div class="Subscribe">
+              <span class="search">
+                <i
+                  class="fa fa-envelope-o"
+                  id="envelope"
+                  aria-hidden="true"
+                ></i>
+                <input type="text" placeholder="Email Address" name="search" />
+              </span>
+              <button type="submit" class="submit">
+                Subscribe
+                <!-- <i class="fa fa-search"></i> -->
+              </button>
+            </div>
+            <p class="details">
+              For details of how we use your information, please see our
+            </p>
+            <a href="#" class="details">privacy policy</a>
+          </div>
         </div>
+        <div class="divider"></div>
+        <div class="copyright">2023 © All rights reserved by SJX</div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
-
-
-
-

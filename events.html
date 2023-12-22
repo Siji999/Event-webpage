@@ -1,98 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="customization.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Events Listing</title>
+    <style>
+      /* body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f0f0f0;
+      } */
 
- 
-  <title>Events Listing</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: #f0f0f0;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .event {
-      border-bottom: 1px solid #ddd;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    .event img {
-      max-width: 100px;
-      margin-right: 20px;
-    }
-
-    @media screen and (max-width: 600px) {
-      section {
+      /* header {
+        background-color: #333;
+        color: #fff;
         padding: 10px;
+        text-align: center;
+      } */
+
+      section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .event {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        display: flex;
+        align-items: center;
       }
 
       .event img {
-        max-width: 80px;
+        max-width: 100px;
+        margin-right: 20px;
       }
-    }
-  </style>
-</head>
-<body>
 
-  <header>
-    <h1>Events Listing</h1>
-    
-  </header>
+      @media screen and (max-width: 600px) {
+        section {
+          padding: 10px;
+        }
 
-  <section>
-    <div class="event">
-      <img src="event1.jpg" alt="Event 1">
-      <div>
-        <h2>Innovation Expo 2023: Unleashing Creative Potential </h2>
-        <p>Location: Manchester United Kingdom</p>
-        <p>Date: December 17th 2023</p>
+        .event img {
+          max-width: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="websiteHeader">
+      <div id="textColor">
+        <div class="nav-container" id="bgColor">
+          <div class="menu-wrapper" id="fontSize">
+            <div class="nav-one">
+              <a href="/" class="nav-link"> SJX </a>
+            </div>
+            <div class="icon">
+              <span onclick="toggleMobileMenu()">
+                <i class="fa fa-bars nav-link" id="barsIcon"></i>
+                <i
+                  class="fa fa-times nav-link"
+                  id="timesIcon"
+                  style="display: none"
+                ></i>
+              </span>
+            </div>
+            <div class="nav-two">
+              <a href="index.html" class="nav-link path-name"> Home </a>
+              <a href="events.html" class="nav-link path-name"> Event </a>
+              <a href="contact.html" class="nav-link path-name"> Contact Us </a>
+              <a href="settings.html" class="nav-link path-name">
+                <i class="fa fa-gear"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-menu" id="mobileMenu">
+            <!-- Mobile menu items will be dynamically added here via JavaScript -->
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="event">
-      <img src="event2.jpg" alt="Event 2">
-      <div>
-        <h2>Tech Innovative Summit 2023</h2>
-        <p>Location: London United Kingdom</p>
-        <p>Date: December 22nd 2023</p>
+    <section>
+      <div class="event">
+        <img src="./Assets/Images/event1.jpg" alt="Event 1" />
+        <div>
+          <h2>Innovation Expo 2023: Unleashing Creative Potential</h2>
+          <p>Location: Manchester United Kingdom</p>
+          <p>Date: December 17th 2023</p>
+        </div>
       </div>
-    </div>
 
-    <!-- Add more events as needed -->
+      <div class="event">
+        <img src="./Assets/Images/event2.jpg" alt="Event 2" />
+        <div>
+          <h2>Tech Innovative Summit 2023</h2>
+          <p>Location: London United Kingdom</p>
+          <p>Date: December 22nd 2023</p>
+        </div>
+      </div>
 
-  </section>
+      <!-- Add more events as needed -->
+    </section>
 
-  <script>
-    // Add any JavaScript logic if needed
-  </script>
-  <br>
-  
-<div class="nav-two">
-  <a href="index.html" class="nav-link">
-      Home
-      <div class="nav-two">
-        <a href="event-details.html" class="nav-link">
-            event-detail
-</body>
+    <!-- <div class="nav-two">
+      <a href="index.html" class="nav-link">
+        Home
+        <div class="nav-two">
+          <a href="event-details.html" class="nav-link"> event-detail </a>
+        </div>
+      </a>
+    </div> -->
+    <!-- Footer -->
+    <footer id="websiteFooter">
+      <div id="bgColor">
+        <div class="foot-wrapper">
+          <div class="first-foot">
+            <p>CONNECT WITH US</p>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> SJX </span>
+            </div>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> SJX </span>
+            </div>
+            <div class="social-media">
+              <span class="icons">
+                <!-- <img src="./assets/images/X svg.svg" alt="x" class="x"> -->
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> @sjx </span>
+            </div>
+          </div>
+          <div class="second-foot">
+            <p>CONTACT</p>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> +44 7392 650742 </span>
+            </div>
+            <div class="social-media">
+              <span class="icons">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </span>
+              <span class="social-media-handle"> +44 7392 650742 </span>
+            </div>
+          </div>
+          <div class="third-foot">
+            <p>Subscribe to get offers</p>
+            <p class="Unsubscribe">Unsubscribe or change preference</p>
+            <div class="Subscribe">
+              <span class="search">
+                <i
+                  class="fa fa-envelope-o"
+                  id="envelope"
+                  aria-hidden="true"
+                ></i>
+                <input type="text" placeholder="Email Address" name="search" />
+              </span>
+              <button type="submit" class="submit">
+                Subscribe
+                <!-- <i class="fa fa-search"></i> -->
+              </button>
+            </div>
+            <p class="details">
+              For details of how we use your information, please see our
+            </p>
+            <a href="#" class="details">privacy policy</a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="copyright">2023 © All rights reserved by SJX</div>
+      </div>
+    </footer>
+  </body>
 </html>

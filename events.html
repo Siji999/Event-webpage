@@ -27,11 +27,20 @@
       } */
 
       section {
-        max-width: 800px;
+        width: 800px;
         margin: 20px auto;
         padding: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      section:hover {
+        transform: scale(1.1);
+      }
+
+      .remove-highlight {
+        text-decoration: none;
       }
 
       .event {
@@ -94,7 +103,7 @@
     </header>
 
     <section>
-      <a href="./event-detail/one.html">
+      <a class="remove-highlight" href="./event-detail/one.html">
         <div class="event">
           <img src="./Assets/Images/event1.jpg" alt="Event 1" />
           <div>
@@ -104,8 +113,10 @@
           </div>
         </div>
       </a>
+    </section>
 
-      <a href="./event-detail/two.html">
+    <section>
+      <a class="remove-highlight" href="./event-detail/two.html">
         <div class="event">
           <img src="./Assets/Images/event2.jpg" alt="Event 2" />
           <div>
@@ -144,7 +155,7 @@
             </div>
           </div>
           <div class="second-foot">
-            <p>CONTACT</p>
+            <p>CONTACTS</p>
             <div class="social-media">
               <span class="icons">
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
